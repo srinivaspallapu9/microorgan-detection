@@ -497,13 +497,14 @@ with tab1:
                 cv2.cvtColor(annotated_rgb, cv2.COLOR_RGB2BGR)
             )
 
+            # REPLACED IMAGE BLOCK
             with open(detected_image_path, "rb") as file:
                 st.download_button(
-                    "📥 Download Annotated Image",
-                    file,
-                    file_name="detected_image.jpg",
-                    use_column_width=True
-                )
+        label="📥 Download Annotated Image",
+        data=file,
+        file_name="detected_image.jpg",
+        mime="image/jpeg"
+    )
 
             show_image_analysis(counts, results)
 
@@ -586,13 +587,14 @@ with tab2:
             st.success("✅ Video processing complete!")
             st.video(output_path)
 
+            # REPLACED VIDEO BLOCK
             with open(output_path, "rb") as file:
                 st.download_button(
-                    "📥 Download Processed Video",
-                    file,
-                    file_name="detected_video.mp4",
-                    use_column_width=True
-                )
+        label="📥 Download Processed Video",
+        data=file,
+        file_name="detected_video.mp4",
+        mime="video/mp4"
+    )
 
             show_video_analysis(total_counts)
 
