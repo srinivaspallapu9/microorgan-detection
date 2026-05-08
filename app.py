@@ -346,7 +346,7 @@ def show_image_analysis(counts, results):
             plot_bgcolor="rgba(0,0,0,0)",
             font=dict(color="#ffffff")
         )
-        st.plotly_chart(fig, use_column_width=True)
+        st.plotly_chart(fig)
 
     with col2:
         st.markdown('<div class="stat-box">', unsafe_allow_html=True)
@@ -373,7 +373,7 @@ def show_image_analysis(counts, results):
                 st.markdown('</div>', unsafe_allow_html=True)
 
             with col2:
-                st.plotly_chart(create_3d_model(organism), use_column_width=True)
+                st.plotly_chart(create_3d_model(organism))
 
     st.markdown("### 📈 Detection Confidence")
 
@@ -413,7 +413,7 @@ def show_video_analysis(counts):
             plot_bgcolor="rgba(0,0,0,0)",
             font=dict(color="#ffffff")
         )
-        st.plotly_chart(fig, use_column_width=True)
+        st.plotly_chart(fig)
 
     with col2:
         st.markdown('<div class="stat-box">', unsafe_allow_html=True)
@@ -473,9 +473,9 @@ with tab1:
         with col1:
             if show_original:
                 st.markdown("**Original Image**")
-                st.image(image, use_column_width=True)
+                st.image(image)
 
-        if st.button("🔍 Analyze Image", use_column_width=True):
+        if st.button("🔍 Analyze Image"):
             with st.spinner("Running YOLOv8 detection..."):
                 results = model(
                     image_np,
@@ -489,7 +489,7 @@ with tab1:
 
             with col2:
                 st.markdown("**Detection Results**")
-                st.image(annotated_rgb, use_column_width=True)
+                st.image(annotated_rgb)
 
             detected_image_path = "detected_image.jpg"
             cv2.imwrite(
@@ -526,7 +526,7 @@ with tab2:
 
         st.video(temp_input.name)
 
-        if st.button("🎬 Process Video", use_column_width=True):
+        if st.button("🎬 Process Video"):
             cap = cv2.VideoCapture(temp_input.name)
 
             if not cap.isOpened():
