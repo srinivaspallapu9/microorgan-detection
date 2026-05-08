@@ -1,0 +1,11 @@
+train: train/images
+val: valid/images
+test: test/images
+nc: 6
+names:
+- Amoeba
+- Euglena
+- Hydra
+- Rod_bacteria
+- Spherical_bacteria
+- Spiral_bacteria

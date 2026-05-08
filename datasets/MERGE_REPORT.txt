@@ -1,0 +1,33 @@
+Merged YOLOv8 Microorganism Dataset
+Target classes: Amoeba, Euglena, Hydra, Rod_bacteria, Spherical_bacteria, Spiral_bacteria
+
+Split image counts: {'train': 688, 'valid': 127, 'test': 88}
+
+Per-zip report:
+SKIPPED 3cb982ca-66c9-44e4-9bee-2ef2b01d7a17.zip: no matching target classes. Classes were ['G001', 'G003', 'G009', 'G010', 'G012', 'G016', 'G018', 'G019', 'G022', 'G024', 'G025', 'G028', 'unknown']
+Amoeba Microbe.v1i.yolov8.zip: kept 119 images; boxes {'Amoeba': 131}; skipped classes []
+Amoeba.v1i.yolov8.zip: kept 61 images; boxes {'Amoeba': 482}; skipped classes []
+MICRO.v1i.yolov8.zip: kept 369 images; boxes {'Amoeba': 244, 'Rod_bacteria': 126, 'Hydra': 32, 'Euglena': 22}; skipped classes []
+SKIPPED Microorganisms 101024.v1i.yolov8.zip: no matching target classes. Classes were ['G001', 'G003', 'G009', 'G010', 'G012', 'G016', 'G018', 'G019', 'G022', 'G024', 'G025', 'G028', 'unknown']
+Rod Bacteria Detection.v1i.yolov8.zip: kept 119 images; boxes {'Rod_bacteria': 127}; skipped classes []
+Spherical Bacteria Detection.v1i.yolov8.zip: kept 119 images; boxes {'Spherical_bacteria': 147}; skipped classes []
+Spiral bacteria detection.v1i.yolov8.zip: kept 116 images; boxes {'Spiral_bacteria': 121}; skipped classes []
+SKIPPED microscope.v1i.yolov8.zip: no matching target classes. Classes were ['objects']
+
+Skipped/unmapped class names:
+G001: 2
+G003: 2
+G009: 2
+G010: 2
+G012: 2
+G016: 2
+G018: 2
+G019: 2
+G022: 2
+G024: 2
+G025: 2
+G028: 2
+unknown: 2
+objects: 1
+
+Skipped files without matching image: 0
