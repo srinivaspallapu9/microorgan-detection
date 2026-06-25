@@ -42,11 +42,11 @@ This system uses a custom-trained **YOLOv8 Object Detection Model**, trained on 
 ---
 
 ## 🏗️ System Architecture
-
+---
 <div align="center">
   <img src="assets/project_diagram.png" alt="System Architecture" width="700"/>
 </div>
-
+---
 ---
 
 ## ⚙️ Process Flow
