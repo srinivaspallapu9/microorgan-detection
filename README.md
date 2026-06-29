@@ -89,7 +89,7 @@ Visualization Dashboard
 - Adjustable confidence threshold
 - Configurable detection parameters
 
----
+--
 
 ## 🛠️ Tech Stack
 
